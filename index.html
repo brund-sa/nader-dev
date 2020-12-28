@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadeer </title>
+</head>
+<style>
+    @font-face {
+        font-family: main-font;
+        src: url(./fonts/arabic-helvetica.ttf) format("truetype");
+    }
+
+    :root {
+        --font-primary: "main-font", sans-serif;
+        --primary-color:#783fff;
+    }
+
+    body{ 
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        background: rgb(6,15,59);
+        background: linear-gradient(145deg, #060f3b 0%, #783fff 100%);
+        font-family: var(--font-primary);
+    }
+
+    .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 25px;
+        color: #ffffff;
+    }
+
+    #btn-pop-up {
+        border-radius: 35px;
+        padding: 10px 35px;
+        background: transparent;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: all 0.5s ease-in-out;
+        font-family: var(--font-primary);
+        line-height: 2rem;
+    }
+    #btn-pop-up:hover {
+        border-radius: 0px;
+        color:  #783fff;
+        background: #ffffff;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="logo">مزيد من الشعار</div>
+        <button id="btn-pop-up" data-paperform-id="brund-test" data-popup-button="1">تعبئة النموذج</button>
+        
+        
+        
+        
+
+    </div>
+
+    <script>
+        (function() { 
+            var script = document.createElement('script'); 
+            script.src = "https://paperform.co/__embed";
+            document.body.appendChild(script); 
+            })
+            ()
+    </script>
+</body>
+</html>
